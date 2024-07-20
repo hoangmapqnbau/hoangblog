@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    color-scheme: light dark;
+    
+    --text-dark: #fff;
+    --text-light: #121212;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: linear-gradient(to right, #24329a,#414ca0, #6e75a8, #d1d3e3);
+        color: var(--text-dark);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background: linear-gradient(to right, #005aa7, #fffde4);
+        color: var(--text-light);
+    }
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
